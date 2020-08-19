@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     triggers {
-        gitlab(
+        github(
             triggerOnPush: true,
             triggerOnMergeRequest: true,
             branchFilterType: 'All',
