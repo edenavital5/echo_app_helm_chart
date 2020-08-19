@@ -1,0 +1,25 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: echoapp-stg
+  namespace: stg
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: glob:stg-*
+spec:
+  releaseName: echoapp-stg
+  chart:
+    git: git@github.com:edenavital5/echo_app_helm_chart.git
+    path: charts/echo
+    ref: master
+  values:
+    image:
+      repository: natalicot/echo-app
+      tag: stg-9ij63o4c
+    replicaCount: 2
+    hpa:
+      enabled: true
+      maxReplicas: 10
+      cpu: 50
+      memory: 256Mi
