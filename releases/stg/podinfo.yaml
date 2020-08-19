@@ -17,7 +17,7 @@ spec:
     image:
       repository: edenavital/echo-app
       tag: staging-b47cbc041794898c9f83e798d1518e649cec85bf      
-    replicaCount: 2
+    replicaCount: 1
     hpa:
       enabled: true
       maxReplicas: 10
