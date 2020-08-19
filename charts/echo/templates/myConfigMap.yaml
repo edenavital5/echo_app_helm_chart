@@ -18,7 +18,7 @@ data:
   DBNAME: 'echo'
   {{ end }}
 
-  {{ if ne {{ MY_POD_NAMESPACE }} "prod" }}
+  {{ if ne {{ MY_POD_NAMESPACE }} "stg" }}
   MONGODBURL:  'mongodb://mongodb-0.mongodb,mongodb-1.mongodb,mongodb-2.mongodb:27017/echo-staging?authSource=admin'
   DBNAME: 'echo-staging'
   {{ end }}
