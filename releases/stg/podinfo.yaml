@@ -6,7 +6,7 @@ metadata:
   namespace: stg
   annotations:
     fluxcd.io/automated: "true"
-    filter.fluxcd.io/chart-image: glob:stg-*
+    filter.fluxcd.io/chart-image: glob:staging-*
 spec:
   releaseName: echoapp-stg
   chart:
@@ -15,8 +15,8 @@ spec:
     ref: master
   values:
     image:
-      repository: natalicot/echo-app
-      tag: stg-9ij63o4c
+      repository: edenavital/echo-app
+      tag: staging-b47cbc041794898c9f83e798d1518e649cec85bf      
     replicaCount: 2
     hpa:
       enabled: true

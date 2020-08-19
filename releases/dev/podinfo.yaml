@@ -15,8 +15,8 @@ spec:
     ref: master
   values:
     image:
-      repository: natalicot/echo-app
-      tag: dev-fixx4yrf
+      repository: edenavital/echo-app
+      tag: dev-28b610bc8d25ca4237d483a1b4a02bacb56ce12d      
     replicaCount: 1
     hpa:
       enabled: false
