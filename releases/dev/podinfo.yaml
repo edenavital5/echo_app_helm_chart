@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: edenavital/echo-app
-      tag: dev-28b610bc8d25ca4237d483a1b4a02bacb56ce12d      
+      tag: dev-6adde84e09c9e4c43187ebdd402ef3f663b64763
     replicaCount: 1
     hpa:
       enabled: false

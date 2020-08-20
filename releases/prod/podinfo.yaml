@@ -16,5 +16,5 @@ spec:
   values:
     image:
       repository: edenavital/echo-app
-      tag: 1.0.7
+      tag: 1.0.11
     replicaCount: 1

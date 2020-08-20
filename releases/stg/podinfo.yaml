@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: edenavital/echo-app
-      tag: staging-b47cbc041794898c9f83e798d1518e649cec85bf      
+      tag: staging-48df9e0c1f3fdcd61ca0e4897cf59e8eb05819cb
     replicaCount: 1
     hpa:
       enabled: true
