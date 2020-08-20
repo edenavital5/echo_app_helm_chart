@@ -6,12 +6,6 @@ metadata:
   labels:
     {{- include "echo.labels" . | nindent 4 }}
 
-env:
-- name: MY_NAMESPACE
-  valueFrom:
-    fieldRef:
-        fieldPath: metadata.namespace
-
 data:
   PORT: '3000'
   LOGLEVEL: 'debug'
