@@ -46,7 +46,7 @@ ingress:
     kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-      host: echo-app.camdvr.org
+      host: staging-echo-app.camdvr.org
       paths: []
   tls: []
   #  - secretName: chart-example-tls
