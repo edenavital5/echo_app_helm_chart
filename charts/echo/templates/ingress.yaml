@@ -13,7 +13,7 @@ spec:
     http:
       paths:
       - backend:
-          serviceName: echo-app
+          serviceName: echoapp-dev
           servicePort: 80
 
 
