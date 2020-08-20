@@ -2,7 +2,6 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: my-config-map
-  namespace: dev
   labels:
     {{- include "echo.labels" . | nindent 4 }}
 
