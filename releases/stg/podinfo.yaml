@@ -12,7 +12,7 @@ spec:
   chart:
     git: git@github.com:edenavital5/echo_app_helm_chart.git
     path: charts/echo
-    ref: master
+    ref: stg
   values:
     image:
       repository: edenavital/echo-app
