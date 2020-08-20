@@ -43,10 +43,10 @@ service:
 ingress:
   enabled: false
   annotations: 
-    kubernetes.io/ingress.class: nginx
+    kubernetes.io/ingress.class: nginxdev
     # kubernetes.io/tls-acme: "true"
   hosts:
-      host: echo-app.camdvr.org
+      host: dev-echo-app.camdvr.org
       paths: []
   tls: []
   #  - secretName: chart-example-tls
