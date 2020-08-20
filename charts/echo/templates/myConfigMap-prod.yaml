@@ -18,11 +18,3 @@ data:
   PERSIST: true
   MONGODBURL:  'mongodb://mongodb-0.mongodb,mongodb-1.mongodb,mongodb-2.mongodb:27017/echo?authSource=admin'
   DBNAME: 'echo'
-  
-  
-
-  # {{ else if eq {{ MY_POD_NAMESPACE }} "stg" }}
-  # MONGODBURL:  'mongodb://mongodb-0.mongodb,mongodb-1.mongodb,mongodb-2.mongodb:27017/echo-staging?authSource=admin'
-  # DBNAME: 'echo-staging'
-  # PERSIST: true
-  # {{ end }}
