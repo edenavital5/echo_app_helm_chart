@@ -2,8 +2,9 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: my-config-map
-  # labels:
-  #   {{- include "echo.labels" . | nindent 4 }}
+  namespace: prod
+  labels:
+    {{- include "echo.labels" . | nindent 4 }}
 
 data:
   PORT: '3000'
